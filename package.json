@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/sjfkai/marathon#readme",
   "dependencies": {
+    "kcors": "^2.2.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.0",
+    "koa-router": "^7.2.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mysql2": "^1.3.5",

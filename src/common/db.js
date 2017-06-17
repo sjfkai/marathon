@@ -10,7 +10,7 @@ const sequelize = new Sequelize('marathon', 'root', '123456', {
     min: 0,
     idle: 10000
   },
-  logging: null,
+  logging: console.log,
 });
 
 const Original = sequelize.define('original', {
