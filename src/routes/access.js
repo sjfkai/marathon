@@ -55,7 +55,11 @@ module.exports = function (router) {
       const scopeTimes = _.groupBy(accessTimes, (accessTime) => {
         return moment(accessTime.time).hour()
       });
-      one.scopeCount = _.map(scopeTimes, 'length');
+      one.scopeCount = [];
+
+      for (let i = 0; i < 24; i++) {
+        one.scopeCount[i] = scopeTimes[i] ? scopeTimes[i].length : 0;
+      }
     }
     ctx.body = top5;
   });
